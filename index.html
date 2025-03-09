@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="top">
+        <ul type="none" >
+            <a href="#intro"><li>Home</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#sec"><li>Skills</li></a>
+            <a href="#pro"><li>Projects</li></a>
+            <a href="#contact"><li>Contact</li></a>
+        </ul>   
+    </div>
+    <div class="main" id="intro">
+        <div class="des">
+            <h1 id="type">Hello,This is</h1>
+            <h1 id="name"></h1>
+            <h1 id="desg">Computer Science Engineering Student </h1><br>
+            <button onclick="window.location.href='#about'">More about me</button>
+        </div>
+        <div class="pic">
+            <img src="image/passport_size_image-removebg-preview.png">
+        </div>
+    </div>
+    <div id="about">
+        <h1>About <span>Me</span></h1>
+        <p>I am a third-year Computer Science Engineering student passionate about problem-solving and software development. With a 5-star proficiency in problem-solving and Data Structures & Algorithms (DSA) on HackerRank, I have honed my skills in tackling complex problems and optimizing solutions.
+
+            I have a strong foundation in web development, having studied HTML, CSS, JavaScript, and React. My curiosity and eagerness to learn drive me to explore new technologies and build practical applications. I have also completed my DSA coursework up to trees, continuously improving my understanding of algorithms and data structures.I am excited to continue learning, building projects, and solving challenges that push my boundaries and enhance my skills.</p>
+    </div>
+    <div class="works">
+        <div class="sec" id="sec">
+            <h1>My Skills</h1>
+            <div class="skills">
+                <div class="skill">
+                    <label>HTML</label>
+                    <div class="progress">
+                        <div class="progress-bar" id="html-bar"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <label>CSS</label>
+                    <div class="progress">
+                        <div class="progress-bar" id="css-bar"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <label>JavaScript</label>
+                    <div class="progress">
+                        <div class="progress-bar" id="js-bar"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <label>React</label>
+                    <div class="progress">
+                        <div class="progress-bar" id="react-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="head">
+            <h1>Projects</h1>
+        </div>
+        <div class="cards" id="pro">
+            <div class="card1"> 
+               <img src="image/weather.png">
+               <div class="content">
+                <h1>Weather Forecast</h1>
+                <h4>Developed a weather forecasting web application that provides real-time weather updates based on user input
+                    city name .</h4>
+               </div>
+            </div>
+            <div class="card1"> 
+                <img src="image/calci.jpg">
+                <div class="content" id="cal">
+                 <h1>Calculator</h1>
+                 <h4>Developed a functional and interactive calculator using HTML, CSS, and JavaScript. Implemented core
+                    arithmetic operations such as addition, subtraction, multiplication, and division..</h4>
+                </div>
+             </div>
+             <div class="card1"> 
+                <img src="image/pass.jpg">
+                <div class="content" id="pass" >
+                 <h1>Password Generator</h1>
+                 <h4>Developed a responsive password generator using React.js, HTML, and CSS. Features customizable length,
+                    character selection, and real-time password generation with a user-friendly UI.</h4>
+                </div>
+             </div>
+        </div>
+       <div class="contact" id="contact">
+        <div class="main">
+            <div class="heading">
+                <h1><span>Contact</span> Me</h1>
+                <div class="mail" id="email">
+                    <div class="img">
+                        <img src="image/gmail.png" >
+                    </div>
+                    <div class="text">
+                        <span>aarohisaxena1014@gmail.com</span>
+                    </div>
+                </div>
+                <div class="mail">
+                    <div class="img">
+                        <img src="image/phone.jpg">
+                    </div>
+                    <div class="text">
+                        <span>+918439088558</span>
+                    </div>
+                </div>
+                  <div class="links">
+                    <a href=""><img src="image/link.png"></a>
+                    <a href=""><img src="image/gmail.png"></a>
+                    <a href=""><img src="image/whatshpp.png"></a>
+                    <a href=""><img src="image/twee.jpg"></a>
+                </div>
+            </div>
+           <div class="form">
+            <label for="name">Full Name</label><br>
+            <input type="text">
+            <label for="email">Email Address</label>
+            <input type="email">
+            <label for ="msg">Your Message</label>
+            <input type="text-area">
+            <button type="submit">Submit</button>
+            </label>
+           </div>
+        </div>
+       </div>
+    </div>
+   
+    <script>
+        const name="Aarohi Saxena"
+        let nameIndex=0;
+        function typewriterName() {
+         if (nameIndex < name.length) {
+           document.getElementById("name").innerHTML += name.charAt(nameIndex);
+           document.getElementById("name").style.color="cyan";
+           nameIndex++;
+           setTimeout(typewriterName, 150);
+           }
+        }
+        document.addEventListener("DOMContentLoaded", typewriterName);
+        document.addEventListener("DOMContentLoaded", function() {
+    const skillLevels = {
+        html: 90,
+        css: 80,
+        js: 60,
+        react: 40
+    };
+    function updateProgress(skill, level) {
+    const progressBar = document.getElementById(`${skill}-bar`);
+    if (progressBar) {
+        progressBar.style.width = `${level}%`;
+        progressBar.textContent = `${level}%`; 
+    }
+}
+    for (const skill in skillLevels) {
+        updateProgress(skill, skillLevels[skill]);
+    }
+});
+
+
+
+        // document.addEventListener("DOMContentLoaded", function(){
+        //     const skillper={
+        //      html:90,
+        //      css:80,
+        //     //  javascript:70,
+        //     //  react:50,
+        //     //  c++:60,
+        //     //  dsa:60
+        //     };
+        //     function updateprogress(skill,level){
+        //         const bar=document.getElementById(`${skill}-bar`);
+        //         bar.style.width=`${level}%`;
+        //     }
+        //     for(const skill in skillper){
+        //         updateprogress(skill,skillper[skill]);
+        //     }
+        // });
+    </script>
+</body>
+
+</html>
