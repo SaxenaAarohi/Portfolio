@@ -341,8 +341,6 @@ label {
     }
     #type{
         margin-left: 250px !important;
-
-
     }
     .des {
         margin-top: 30;
@@ -424,33 +422,60 @@ label {
 /* For mobile screens (max-width: 480px) */
 @media (max-width: 480px) {
     .top ul {
-        flex-direction: column;
-        align-items: center;
-        margin-right: 0;
+       justify-content: center;
     }
-
+    @keyframes dropFromTop {
+        0% {
+            top: -50px;
+            opacity: 0;
+        }
+        100% {
+            top: 70px; /* Final position */
+            opacity: 1;
+        }
+    }
     .top li {
         font-size: 16px;
     }
-
+#type{
+    margin-left: 200px !important;
+}
+#name{
+    margin-left: 130px;
+}
+#desg{
+    margin-top: -50px;
+}
     .main {
-        margin-top: 10px;
+        margin-top: 90px;
     }
-
+    .des button{
+        margin-top: 100px;
+        margin-left: 80px;
+    }
+.works,.about{
+    margin-left: 100px;
+}
     .des {
         margin-top: 0;
+
         margin-left: 0;
         width: 100%;
+    }
+    .pic{
+        margin-left: 400px;
     }
 
     .pic img {
         width: 180px;
         height: 180px;
+
     }
 
     #about {
         height: auto;
         padding: 10px;
+        margin-left: 40px;
     }
 
     #about p {
@@ -467,10 +492,9 @@ label {
     }
 
     .contact {
-        padding-left: 20px;
+      
         padding-top: 20px;
     }
-
     .form {
         width: 90%;
         margin-left: 10px;
@@ -485,9 +509,12 @@ label {
     }
 
     .form button {
-        width: 100%;
+        width: 80%;
+        margin-left: 40px;
     }
-
+#sec,#pro{
+    margin-left: 50px;
+}
     .skills {
         margin-left: 0;
     }
