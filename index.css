@@ -311,4 +311,180 @@ label {
     left: 0;
     top: 0;
 }
+/* Media Queries for Responsiveness */
+
+/* For devices with a screen width of 768px or less (Tablets and below) */
+@media (max-width: 768px) {
+    .top ul {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .top li {
+        font-size: 18px;
+        padding-left: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .des {
+        margin-top: 0;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .pic {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .pic img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #about {
+        height: auto;
+        padding: 20px;
+    }
+
+    #about p {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    .works {
+        margin-top: 40px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .form {
+        max-width: 90%;
+    }
+
+    .form label {
+        font-size: 14px;
+    }
+
+    .form input, .form textarea {
+        font-size: 14px;
+    }
+
+    .form button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .skills {
+        max-width: 90%;
+        margin-left: 0;
+    }
+
+    .skill {
+        margin-bottom: 15px;
+    }
+
+    .progress-bar {
+        font-size: 14px;
+    }
+}
+
+/* For mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .top ul {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .top li {
+        font-size: 16px;
+    }
+
+    .main {
+        margin-top: 10px;
+    }
+
+    .des {
+        margin-top: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .pic img {
+        width: 180px;
+        height: 180px;
+    }
+
+    #about {
+        height: auto;
+        padding: 10px;
+    }
+
+    #about p {
+        font-size: 16px;
+    }
+
+    .works {
+        height: auto;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .form {
+        width: 90%;
+        margin-left: 10px;
+    }
+
+    .form label {
+        font-size: 12px;
+    }
+
+    .form input, .form textarea {
+        font-size: 12px;
+    }
+
+    .form button {
+        width: 100%;
+    }
+
+    .skills {
+        margin-left: 0;
+    }
+
+    .skill {
+        margin-bottom: 10px;
+    }
+
+    .progress-bar {
+        font-size: 12px;
+    }
+}
 
