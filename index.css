@@ -422,7 +422,9 @@ label {
 /* For mobile screens (max-width: 480px) */
 @media (max-width: 480px) {
     .top ul {
-       justify-content: center;
+       justify-content: center ;
+     
+    
     }
     @keyframes dropFromTop {
         0% {
@@ -475,7 +477,7 @@ label {
     #about {
         height: auto;
         padding: 10px;
-        margin-left: 40px;
+        margin-left: 100px;
     }
 
     #about p {
