@@ -193,7 +193,8 @@ background-color:cyan ;
     margin-left: 20px;
 }
 .text a{
-    text-decoration:none;}
+    text-decoration:none !important;
+}
 .text span{
     color: white;
 }
