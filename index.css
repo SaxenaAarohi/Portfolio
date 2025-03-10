@@ -203,6 +203,8 @@ background-color:cyan ;
 .mail,.links{
     padding: 20px;
 }
+
+    
 .links{
     display: flex;
     margin-left: 90px;
